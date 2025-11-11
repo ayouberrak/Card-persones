@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Personnes</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestionnaire de Profils</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Ajouter / Modifier une personne</h2>
+                <form id="person-form">
+                    <input type="hidden" id="edit-id">
+                    
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateNaissance">Date de naissance</label>
+                        <input type="date" id="dateNaissance" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adresse">Adresse</label>
+                        <input type="text" id="adresse" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ville">Ville</label>
+                        <input type="text" id="ville" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">URL de la photo</label>
+                        <input type="url" id="photo" placeholder="  " required>
+                    </div>
+                    <button type="submit" id="submit-btn">Ajouter</button>
+                    <button type="button" id="cancel-btn" class="hidden">Annuler</button>
+                </form>
+            </div>
+
+            <div class="cards-container-wrapper">
+                <h2>Personnes enregistrées</h2>
+                <div id="cards-container">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="jd.js"></script>
+</body>
+</html>
